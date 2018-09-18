@@ -9,7 +9,7 @@
     <Import_RootNamespace>Skight.Core.DI</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Registration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Container.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)IContainer.cs" />
   </ItemGroup>
 </Project>

@@ -1,25 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Skight.Core.Container
 {
-    public class Container
+    public interface Container
     {
-        private static IContainer underlying_resolver;
+        IEnumerable<Dependency> get_all<Dependency>();
+        IEnumerable<object> get_all(Type dependency);
+        Dependency get_an<Dependency>();
+        object get_an(Type dependency);
+        bool has(Type dependency);
 
-        public static IContainer current
-        {
-            get { return underlying_resolver; }
-        }
-
-        public static void initialize_with(IContainer resolver)
-        {
-            underlying_resolver = resolver;
-        }
-
-        public static T get<T>()
-        {
-            return underlying_resolver.get_an<T>();
-        }
+        T resolve<T>();
     }
 }
