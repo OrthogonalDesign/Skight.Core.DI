@@ -6,6 +6,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Skight.Core.DI", "Skight.Co
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Skight.Core.DI.ReflectionProvider", "Skight.Core.DI.ReflectionProvider\Skight.Core.DI.ReflectionProvider.shproj", "{12752716-52D1-4F4B-8EEB-4D7F39DC1958}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Skight.Core.DI.ReflectionProvider.Specs", "Skight.Core.DI.ReflectionProvider.Specs\Skight.Core.DI.ReflectionProvider.Specs.shproj", "{9AE13AC5-B062-462B-B329-0B211F2C90BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Skight.Core.Container
+namespace Skight.Core.DI
 {
     public interface Container
     {

@@ -1,4 +1,4 @@
-﻿using Skight.Arch.Domain.Containers;
+﻿using Skight.Core.DI;
 
 namespace DefaultNamespace
 {

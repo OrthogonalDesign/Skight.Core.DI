@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Skight.Arch.Domain.Containers
+namespace Skight.Core.DI
 {
     public interface Registration
     {
