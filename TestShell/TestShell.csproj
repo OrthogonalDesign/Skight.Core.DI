@@ -1,11 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-
     <IsPackable>false</IsPackable>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Machine.Specifications" Version="0.12.0" />
     <PackageReference Include="Machine.Specifications.Runner.VisualStudio" Version="2.7.0" />
@@ -14,5 +11,6 @@
     <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
     <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
   </ItemGroup>
-
+  <Import Project="..\Skight.Core.DI.ReflectionProvider\Skight.Core.DI.ReflectionProvider.projitems" Label="Shared" />
+  <Import Project="..\Skight.Core.DI\Skight.Core.DI.projitems" Label="Shared" />
 </Project>

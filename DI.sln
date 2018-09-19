@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestShell", "TestShell\Test
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Skight.Core.DI", "Skight.Core.DI\Skight.Core.DI.shproj", "{7EC641ED-27A1-4F52-B183-314AE2127C6B}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Skight.Core.DI.ReflectionProvider", "Skight.Core.DI.ReflectionProvider\Skight.Core.DI.ReflectionProvider.shproj", "{12752716-52D1-4F4B-8EEB-4D7F39DC1958}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
