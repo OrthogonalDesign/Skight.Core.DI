@@ -9,8 +9,7 @@ namespace Skight.Core.DI.ReflectionProvider.Specs
 {
     public class RegisterClassSpecs
     {
-        protected interface mockInterface{}
-        protected class mockClass :mockInterface {}
+       
 
         private Establish context = () =>
         {
@@ -19,11 +18,14 @@ namespace Skight.Core.DI.ReflectionProvider.Specs
             container =new ContainerImpl(resolvers);
         };
         
-        Because of = ()=>  registration.register<mockInterface, mockClass>();
+        Because of = ()=>  registration.register<DumbInterface, DumbClass>();
         
-        private It should = () => container.get<mockInterface>().ShouldBeOfExactType<mockClass>();
+        private It should = () => container.get<DumbInterface>().ShouldBeOfExactType<DumbClass>();
         
-        private static RegistrationImpl registration;
-        private static ContainerImpl container;
+        private static Registration registration;
+        private static Container container;
+
+        private interface DumbInterface{}
+        private class DumbClass :DumbInterface {}
     }
 }

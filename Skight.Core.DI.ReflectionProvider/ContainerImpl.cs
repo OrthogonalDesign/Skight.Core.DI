@@ -13,9 +13,9 @@ namespace Skight.Core.DI.ReflectionProvider
             item_resolvers = itemResolvers;
         }
 
-        public T get<T>()
+        public object get(Type type)
         {
-            return (T) item_resolvers[typeof(T)].resolve();
+            return item_resolvers[type].resolve();
         }
     }
 }
