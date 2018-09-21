@@ -1,0 +1,3 @@
+[submodule "dependencies/BasicTypeExtensions"]
+	path = dependencies/BasicTypeExtensions
+	url = http://git.skight.com:3000/Skight.BuildingBlocks/BasicTypeExtensions.git
