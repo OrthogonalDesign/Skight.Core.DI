@@ -20,7 +20,7 @@ namespace Skight.Core.DI.ReflectionProvider
 
         public void register(Type contract_type, Type implement_type)
         {
-            if(!implement_type.is_inherited_from(contract_type))
+            if(!implement_type.is_assignable_to(contract_type))
                 throw new ApplicationException(
                     $"Registering implement type {implement_type} is not inherited from contract type {contract_type}");
             register_resolver(contract_type, new RecursiveResolver(container,implement_type));

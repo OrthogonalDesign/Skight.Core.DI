@@ -10,5 +10,11 @@ namespace Skight.Core.DI
         {
             registration.register(typeof(Contract), typeof(Implementation));
         }
+
+        public static void self_register<T>(
+            this Registration registration)
+        {
+            registration.register<T,T>();
+        }
     }
 }
