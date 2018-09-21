@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)RecursiveCaes\When_register_a_class_depend_on_another_class.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RecursiveCaes\When_register_cycle_depending_classes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SetupContainer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SelfTest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SingleClassCases\When_register_a_class_against_not_inherited_interface.cs" />

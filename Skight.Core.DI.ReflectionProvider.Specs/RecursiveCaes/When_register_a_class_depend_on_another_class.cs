@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.Design;
-using Machine.Specifications;
+﻿using Machine.Specifications;
 
 namespace Skight.Core.DI.ReflectionProvider.Specs
 {
@@ -13,7 +12,7 @@ namespace Skight.Core.DI.ReflectionProvider.Specs
 
         private Because of = () => resolved_object= container.get<DumbClass>();
 
-        It should = () => resolved_object.Service.ShouldNotBeNull();
+        It should_throw_exception = () => resolved_object.Service.ShouldNotBeNull();
         
         private static DumbClass resolved_object;
 
