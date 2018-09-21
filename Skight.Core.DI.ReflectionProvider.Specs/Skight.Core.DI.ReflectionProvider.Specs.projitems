@@ -9,7 +9,8 @@
     <Import_RootNamespace>Skight.Core.DI.ReflectionProvider.Specs</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)RegisterClassSpecs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)When_register_interface_with_implementation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SetupContainer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SelfTest.cs" />
   </ItemGroup>
 </Project>
