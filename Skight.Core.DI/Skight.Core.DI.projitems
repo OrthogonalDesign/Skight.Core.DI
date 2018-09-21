@@ -12,5 +12,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)ContainerHumanInterfaces.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Registration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Container.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RegistrationHumanInterfaces.cs" />
   </ItemGroup>
 </Project>
