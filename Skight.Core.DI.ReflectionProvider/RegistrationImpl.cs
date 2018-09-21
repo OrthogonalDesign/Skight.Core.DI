@@ -7,16 +7,18 @@ namespace Skight.Core.DI.ReflectionProvider
     public class RegistrationImpl  : Registration
     {
         private readonly IDictionary<Type, DiscreteItemResolver> item_resolvers;
+        private readonly Container container;
 
         public RegistrationImpl(IDictionary<Type, DiscreteItemResolver> resolvers)
         {
             item_resolvers = resolvers;
+            container=new ContainerImpl(item_resolvers);
         }
 
 
-        public void register<Contract, Implementation>() where Implementation : Contract, new()
+        public void register<Contract, Implementation>() where Implementation : Contract
         {
-            register_resolver(typeof (Contract), new FuncResolver(() => new Implementation()));
+            register_resolver(typeof (Contract), new RecursiveResolver(container,typeof(Implementation)));
         }
 
 

@@ -6,7 +6,7 @@ using Skight.BuildBlocks.BasicTypeExtensions;
 
 namespace Skight.Core.DI.ReflectionProvider
 {
-    public class RecursiveResolver
+    public class RecursiveResolver :DiscreteItemResolver
     {
         private readonly Container container;
         private readonly Type type;
