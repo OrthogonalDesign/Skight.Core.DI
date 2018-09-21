@@ -12,6 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ContainerImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DiscreteItemResolver.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FuncResolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RecursiveResolver.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RegistrationImpl.cs" />
   </ItemGroup>
 </Project>

@@ -8,6 +8,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Skight.Core.DI.ReflectionPr
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Skight.Core.DI.ReflectionProvider.Specs", "Skight.Core.DI.ReflectionProvider.Specs\Skight.Core.DI.ReflectionProvider.Specs.shproj", "{9AE13AC5-B062-462B-B329-0B211F2C90BB}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Skight.BuildBlocks.BasicTypeExtensions", "dependencies\BasicTypeExtensions\Skight.BuildBlocks.BasicTypeExtensions\Skight.BuildBlocks.BasicTypeExtensions.shproj", "{1A8FE871-5DB8-43D8-B242-3E8C3A401596}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

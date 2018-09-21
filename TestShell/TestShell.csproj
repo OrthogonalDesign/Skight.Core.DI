@@ -14,4 +14,5 @@
   <Import Project="..\Skight.Core.DI.ReflectionProvider\Skight.Core.DI.ReflectionProvider.projitems" Label="Shared" />
   <Import Project="..\Skight.Core.DI\Skight.Core.DI.projitems" Label="Shared" />
   <Import Project="..\Skight.Core.DI.ReflectionProvider.Specs\Skight.Core.DI.ReflectionProvider.Specs.projitems" Label="Shared" />
+  <Import Project="..\dependencies\BasicTypeExtensions\Skight.BuildBlocks.BasicTypeExtensions\Skight.BuildBlocks.BasicTypeExtensions.projitems" Label="Shared" />
 </Project>
