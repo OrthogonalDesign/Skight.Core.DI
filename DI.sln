@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestShell", "TestShell\TestShell.csproj", "{31016783-8B01-4A28-8599-53FCF8B22519}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestShell", "TestShell\TestShell.csproj", "{31016783-8B01-4A28-8599-53FCF8B22519}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Skight.Core.DI", "Skight.Core.DI\Skight.Core.DI.shproj", "{7EC641ED-27A1-4F52-B183-314AE2127C6B}"
 EndProject
@@ -11,6 +14,12 @@ EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Skight.BuildBlocks.BasicTypeExtensions", "dependencies\BasicTypeExtensions\Skight.BuildBlocks.BasicTypeExtensions\Skight.BuildBlocks.BasicTypeExtensions.shproj", "{1A8FE871-5DB8-43D8-B242-3E8C3A401596}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Skight.Core.DI.ReflectionProvider\Skight.Core.DI.ReflectionProvider.projitems*{12752716-52d1-4f4b-8eeb-4d7f39dc1958}*SharedItemsImports = 13
+		dependencies\BasicTypeExtensions\Skight.BuildBlocks.BasicTypeExtensions\Skight.BuildBlocks.BasicTypeExtensions.projitems*{1a8fe871-5db8-43d8-b242-3e8c3a401596}*SharedItemsImports = 13
+		Skight.Core.DI\Skight.Core.DI.projitems*{7ec641ed-27a1-4f52-b183-314ae2127c6b}*SharedItemsImports = 13
+		Skight.Core.DI.ReflectionProvider.Specs\Skight.Core.DI.ReflectionProvider.Specs.projitems*{9ae13ac5-b062-462b-b329-0b211f2c90bb}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -20,5 +29,11 @@ Global
 		{31016783-8B01-4A28-8599-53FCF8B22519}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31016783-8B01-4A28-8599-53FCF8B22519}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31016783-8B01-4A28-8599-53FCF8B22519}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A88B1C9-4825-49A1-8126-E2DE5F1B8935}
 	EndGlobalSection
 EndGlobal
