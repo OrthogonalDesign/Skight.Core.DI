@@ -20,7 +20,7 @@ namespace Skight.Core.DI.ReflectionProvider
         public object resolve()
         {
             ParameterInfo[] param_types = type.greediest_constructor().GetParameters();
-            if(type.has_cycle_depends(param_types))
+            if(type.has_cycle_depends())
                 throw new ApplicationException(
                     $"Registering implement type {type} has cycle depends with param");
             IEnumerable<object> parameters = get_parameters(param_types);
