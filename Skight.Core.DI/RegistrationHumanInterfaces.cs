@@ -1,14 +1,32 @@
-﻿using System.Diagnostics.Contracts;
+﻿using System;
+using System.Diagnostics.Contracts;
+using Microsoft.AspNetCore.Authentication;
 
 namespace Skight.Core.DI
 {
     public static class RegistrationHumanInterfaces
     {
+        public static void register<Contract>(
+            this Registration registration, Func<Contract> func)
+        {
+            registration.register(
+                typeof(Contract), 
+                new FuncResolver(() => func()));
+        }
+        
         public static void register<Contract, Implementation>(
             this Registration registration)
             where Implementation : Contract 
         {
             registration.register(typeof(Contract), typeof(Implementation));
+        }
+
+        
+        public static void register<Contract>(
+            this Registration registration,
+            Contract instance)
+        {
+            registration.register(typeof(Contract));
         }
 
         public static void self_register<T>(

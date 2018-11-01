@@ -1,4 +1,4 @@
-﻿namespace Skight.Core.DI.ReflectionProvider
+﻿namespace Skight.Core.DI
 {
     public interface DiscreteItemResolver
     {

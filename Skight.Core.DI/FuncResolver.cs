@@ -1,8 +1,7 @@
 ﻿using System;
 
-namespace Skight.Core.DI.ReflectionProvider
+namespace Skight.Core.DI
 {
-    
     public class FuncResolver : DiscreteItemResolver
     {
         private readonly Func<object> factory;

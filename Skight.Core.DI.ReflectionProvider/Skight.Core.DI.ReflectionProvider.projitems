@@ -9,10 +9,9 @@
     <Import_RootNamespace>Skight.Core.DI.ReflectionProvider</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ConstructorResolver.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ContainerImpl.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)DiscreteItemResolver.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)FuncResolver.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)RecursiveResolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TypeResolver.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RegistrationImpl.cs" />
   </ItemGroup>
 </Project>

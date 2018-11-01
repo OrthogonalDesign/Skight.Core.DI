@@ -9,29 +9,35 @@ namespace Skight.Core.DI.ReflectionProvider
     public class RegistrationImpl  : Registration
     {
         private readonly IDictionary<Type, DiscreteItemResolver> item_resolvers;
-        private readonly Container container;
+        private readonly ConstructorResolver constructor_resolver;
 
-        public RegistrationImpl(IDictionary<Type, DiscreteItemResolver> resolvers)
+        public RegistrationImpl(
+            IDictionary<Type, DiscreteItemResolver> resolvers)
         {
             item_resolvers = resolvers;
-            container=new ContainerImpl(item_resolvers);
+            constructor_resolver=
+                new ConstructorResolver(
+                    new ContainerImpl(item_resolvers));
         }
 
 
         public void register(Type contract_type, Type implement_type)
         {
-            if(!implement_type.is_assignable_to(contract_type))
+            if (!implement_type.is_assignable_to(contract_type))
                 throw new ApplicationException(
                     $"Registering implement type {implement_type} is not inherited from contract type {contract_type}");
-            register_resolver(contract_type, new RecursiveResolver(container,implement_type));
+            register(
+                contract_type,
+                new TypeResolver(
+                    constructor_resolver, 
+                    implement_type));
         }
 
-
-        private void register_resolver(Type type, DiscreteItemResolver resolver)
+        public void register(Type type, DiscreteItemResolver resolver)
         {
-             if(item_resolvers.ContainsKey(type))
-                 throw new ApplicationException($"Trying to register existed type {type}." );
-             item_resolvers.Add(type, resolver);            
-        }      
+            if(item_resolvers.ContainsKey(type))
+                throw new ApplicationException($"Trying to register existed type {type}." );
+            item_resolvers.Add(type, resolver);    
+        }
     }
 }
