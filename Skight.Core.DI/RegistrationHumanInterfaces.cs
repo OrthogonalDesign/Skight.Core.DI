@@ -21,18 +21,17 @@ namespace Skight.Core.DI
             registration.register(typeof(Contract), typeof(Implementation));
         }
 
-        
-        public static void register<Contract>(
-            this Registration registration,
-            Contract instance)
-        {
-            registration.register(typeof(Contract));
-        }
-
         public static void self_register<T>(
             this Registration registration)
         {
             registration.register<T,T>();
+        }
+        
+        public static void self_register(
+            this Registration registration,
+            Type type)
+        {
+            registration.register(type, type);
         }
     }
 }

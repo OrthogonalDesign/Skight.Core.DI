@@ -35,9 +35,15 @@ namespace Skight.Core.DI.ReflectionProvider
 
         public void register(Type type, DiscreteItemResolver resolver)
         {
-            if(item_resolvers.ContainsKey(type))
-                throw new ApplicationException($"Trying to register existed type {type}." );
-            item_resolvers.Add(type, resolver);    
+            safe_add(type, resolver);    
+        }
+
+        private void safe_add(Type type, DiscreteItemResolver resolver)
+        {
+            if (!item_resolvers.ContainsKey(type))
+            {
+                item_resolvers.Add(type,resolver);
+            }
         }
     }
 }
