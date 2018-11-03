@@ -15,6 +15,10 @@ namespace Skight.Core.DI.ReflectionProvider
 
         public object get(Type type)
         {
+            if (!item_resolvers.ContainsKey(type))
+            {
+                throw new ApplicationException($"Cannot find type {type} resolver.");
+            }
             return item_resolvers[type].resolve();
         }
     }

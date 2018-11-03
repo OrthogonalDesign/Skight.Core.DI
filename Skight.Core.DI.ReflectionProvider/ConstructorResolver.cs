@@ -24,7 +24,8 @@ namespace Skight.Core.DI.ReflectionProvider
         
         private IEnumerable<object> get_parameters(ParameterInfo[] param_types)
         {
-            return param_types.Select(x => container.get(x.ParameterType));
+            var result= param_types.Select(x => container.get(x.ParameterType));
+            return result;
         }
     }
 }
