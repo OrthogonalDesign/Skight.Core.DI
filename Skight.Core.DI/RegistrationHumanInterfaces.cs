@@ -23,6 +23,7 @@ namespace Skight.Core.DI
 
         public static void self_register<T>(
             this Registration registration)
+            where T: class 
         {
             registration.register<T,T>();
         }
