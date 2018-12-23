@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics.Contracts;
-using Microsoft.AspNetCore.Authentication;
 
 namespace Skight.Core.DI
 {
