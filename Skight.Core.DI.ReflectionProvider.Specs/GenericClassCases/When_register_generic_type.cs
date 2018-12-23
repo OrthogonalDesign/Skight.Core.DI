@@ -1,3 +1,4 @@
+using System;
 using Machine.Specifications;
 using Skight.Core.DI;
 using Skight.Core.DI.ReflectionProvider.Specs;
@@ -11,9 +12,11 @@ namespace TestShell.GenericClassCases
 
         private It container_get_concrete_type_should_get_success = () =>
             container.get<GenericeType<int>>()
-                .ShouldNotBeOfExactType <GenericeType<int>>();
-        
-        
+                .ShouldBeOfExactType <GenericeType<int>>();
+
+        private static object result;
+
+
         private class GenericeType<T>{}
     }
 }
