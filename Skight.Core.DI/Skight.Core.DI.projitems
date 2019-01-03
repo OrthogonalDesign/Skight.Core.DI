@@ -11,6 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)ContainerHumanInterfaces.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DiscreteItemResolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FuncResolver.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Registration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Container.cs" />

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Skight.Core.DI;
+using Skight.Core.DI.ReflectionProvider.Specs.ResolveFromFactoryCases;
 
 namespace Skight.Core.DI.ReflectionProvider
 {
@@ -29,7 +30,13 @@ namespace Skight.Core.DI.ReflectionProvider
                    return constructor_resolver.resolve(type);
                 }
             }
-            
+            //Looking for Factory
+            var factory_type = typeof(Factory<>).MakeGenericType(type);
+            if (item_resolvers.ContainsKey(factory_type))
+            {
+                dynamic  factory = item_resolvers[factory_type].resolve() ;
+                return factory.create();
+            }
             throw new ApplicationException($"Cannot resolve type {type}.");
 
         }
