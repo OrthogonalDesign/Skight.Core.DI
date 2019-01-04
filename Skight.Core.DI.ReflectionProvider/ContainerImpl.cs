@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Skight.Core.DI;
-using Skight.Core.DI.ReflectionProvider.Specs.ResolveFromFactoryCases;
 
 namespace Skight.Core.DI.ReflectionProvider
 {
