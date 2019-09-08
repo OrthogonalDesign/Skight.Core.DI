@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Skight.Core.DI
 {
-    interface Factory<T>
+    public interface Factory<T>
     {
         T create();
     }
