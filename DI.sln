@@ -11,7 +11,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Skight.Core.DI.ReflectionPr
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Skight.Core.DI.ReflectionProvider.Specs", "Skight.Core.DI.ReflectionProvider.Specs\Skight.Core.DI.ReflectionProvider.Specs.shproj", "{9AE13AC5-B062-462B-B329-0B211F2C90BB}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Skight.BuildBlocks.BasicTypeExtensions", "dependencies\BasicTypeExtensions\Skight.BuildBlocks.BasicTypeExtensions\Skight.BuildBlocks.BasicTypeExtensions.shproj", "{1A8FE871-5DB8-43D8-B242-3E8C3A401596}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skight.Core.DI.Publish", "Skight.Core.DI.Publish\Skight.Core.DI.Publish.csproj", "{68754B33-446C-4213-BBCF-CBB04898F756}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -29,6 +29,10 @@ Global
 		{31016783-8B01-4A28-8599-53FCF8B22519}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31016783-8B01-4A28-8599-53FCF8B22519}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31016783-8B01-4A28-8599-53FCF8B22519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68754B33-446C-4213-BBCF-CBB04898F756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68754B33-446C-4213-BBCF-CBB04898F756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68754B33-446C-4213-BBCF-CBB04898F756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68754B33-446C-4213-BBCF-CBB04898F756}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

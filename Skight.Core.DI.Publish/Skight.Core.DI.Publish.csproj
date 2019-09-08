@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <AssemblyName>Skight.Core.DI</AssemblyName>
+        <RootNamespace>Skight.Core.DI</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>Skight.Core.DI</PackageId>
+        <Authors>Hao Wang</Authors>
+    </PropertyGroup>
+
+</Project>
